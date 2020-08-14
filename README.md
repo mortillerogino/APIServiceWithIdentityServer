@@ -11,6 +11,8 @@
 
 ## **Steps to Use**
 
+*You can take a first step by importing the API Requests here: https://www.getpostman.com/collections/0c0a3ad530a74d8b56c6*
+
 **Getting an Access token from the Identity Server**
 1. Download code and open on Visual Studio
 2. Set both Server and API as startup projects
