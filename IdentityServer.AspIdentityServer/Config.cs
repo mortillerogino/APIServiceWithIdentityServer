@@ -48,6 +48,27 @@ namespace IdentityServer.AspIdentityServer
 
                     AllowAccessTokensViaBrowser = true
                 },
+
+                // interactive ASP.NET Core MVC client
+                new Client
+                {
+                    ClientId = "portal",
+                    ClientSecrets = { new Secret("secret".Sha256()) },
+
+                    AllowedGrantTypes = GrantTypes.Code,
+
+                    // where to redirect to after login
+                    RedirectUris = { "https://localhost:44351/signin-oidc" },
+
+                    // where to redirect to after logout
+                    PostLogoutRedirectUris = { "https://localhost:44351/signout-callback-oidc" },
+
+                    AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                    }
+                },
             };
     }
 }
