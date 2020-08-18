@@ -62,6 +62,7 @@ namespace IdentityServer.AspIdentityServer
                 app.UseDatabaseErrorPage();
             }
 
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseIdentityServer();
             app.UseAuthorization();
