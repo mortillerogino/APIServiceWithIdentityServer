@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IdentityServer.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200826100633_Add-Column-ReferrerId")]
+    [Migration("20200826101515_Add-Column-ReferrerId")]
     partial class AddColumnReferrerId
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
